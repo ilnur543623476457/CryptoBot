@@ -29,20 +29,4 @@ module.exports = function () {
     });
 }
 
-// module.exports = function () {
-//     const fileName = 'binance.txt';
-//     const apiKey = process.env.BINANCE_API_KEY
-//     const apiSecret = process.env.BINANCE_SICRET_KEY
-//     const client = new Spot(apiKey, apiSecret)
-//     client.bookTicker().then(response => {
-//         const arr = []
-//         for (let i = 0; i < response.data.length; i++) {
-//             var monBin = response.data[i].symbol
-//             arr.push(monBin)
-//         }
-//         console.log('монеты бинанс получены');
-//         fs.writeFileSync(fileName, arr.join('\r\n'), 'utf-8', 'w');
-//     })
-// }
-
 
